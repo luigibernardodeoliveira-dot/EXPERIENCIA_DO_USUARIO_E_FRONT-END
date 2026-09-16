@@ -10,14 +10,21 @@ Este projeto é desenvolvido pelos seguintes alunos:
 
 ## Conhecendo o problema
 
-Sobre o produto ou serviço que seu grupo está desenvolvendo, responda:
-- Apresente uma breve descrição.
-- Apresente o objetivo. 
-- Apresente o usuário final.
-- Apresente os principais benefícios para o usuários.
-- Apresente as funcionalidades.
-- Apresente as tecnologias e ferramentas computacionais utilizadas.
-- Apresente o contexto de uso.
+Sobre o produto ou serviço que seu grupo está desenvolvendo:
+
+* **Descrição:** O FEI Viagens é um aplicativo para ajudar grupos a organizar viagens juntos, montando roteiros e dividindo contas em um só lugar.
+
+* **Objetivo:** Centralizar as informações da viagem para que a organização e as cobranças financeiras não fiquem nas costas de uma pessoa só.
+
+* **Usuário final:** Viajantes em grupo. Temos desde aquele amigo mais responsável que organiza tudo, até aquele que só acompanha e quer saber a hora do passeio e quanto tem que pagar.
+
+* **Principais benefícios:** Evita que os combinados e comprovantes se percam no WhatsApp. Tira a sobrecarga e o constrangimento do organizador na hora de cobrar o pessoal. Para os outros amigos, deixa bem claro quanto eles devem e qual é o roteiro do dia.
+
+* **Funcionalidades:** Roteiro compartilhado (com opção de ver sem internet), divisão de despesas automática, enquetes para o grupo votar nos passeios, notificações de cobrança com atalho para o Pix e leitor de comprovantes.
+
+* **Tecnologias e ferramentas:** Vamos usar o Figma para a prototipagem das telas e as linguagens padrão da disciplina (HTML, CSS e JavaScript).
+
+* **Contexto de uso:** Antes da viagem, o pessoal usa mais em casa, pelo notebook ou celular no Wi-Fi, planejando com calma. Durante a viagem, vão usar o app na rua pelo celular, às vezes com internet oscilando ou pouca bateria, precisando de informações rápidas e fáceis de ler na tela.
 
 ## Desenvolvimento
 
