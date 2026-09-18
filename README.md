@@ -5,8 +5,8 @@ Projeto apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), 
 Este projeto é desenvolvido pelos seguintes alunos:
 
 - Luigi Bernardo de Oliveira
-- Nome Componente 2
-- Nome Componente 3
+- Gustavo Silva Ferreira 
+- Marcos Vinicius Caetano Silva
 
 ## Conhecendo o problema
 
