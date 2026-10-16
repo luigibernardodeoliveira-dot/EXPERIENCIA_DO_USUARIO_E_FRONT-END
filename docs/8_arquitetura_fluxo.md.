@@ -1,0 +1,124 @@
+# Arquitetura de Informação e Fluxo do Usuário
+
+> **_NOTE:_**: Esta entrega organiza como o conteúdo/funcionalidades estão estruturados e como o usuário se move entre eles, antes de partir para a prototipação.
+
+---
+
+## 1) Arquitetura de Informação (Sitemap)
+
+**Telas e Seções Principais:**
+*   **Acesso e Home:** Tela de Login/Cadastro, Home (Lista de Viagens Ativas e Passadas).
+*   **Dashboard da Viagem:** A central da viagem, dividida em três abas principais na navegação inferior (Bottom Navigation).
+    *   **Aba Roteiro:** Cronograma do dia, Criação de Enquetes, Votação.
+    *   **Aba Financeiro:** Meus Saldos, Cadastrar Nova Despesa (Manual ou Leitura OCR), Extrato do Grupo.
+    *   **Aba Membros:** Lista de participantes, Gerar link de convite.
+
+### Diagrama de Sitemap
+
+```mermaid
+graph TD
+    A([Login / Cadastro]) --> B[Home - Lista de Viagens]
+    B --> C{Dashboard da Viagem}
+    
+    C --> D[Aba Roteiro]
+    D --> D1[Cronograma do Dia]
+    D --> D2[Enquetes Ativas]
+    
+    C --> E[Aba Financeiro]
+    E --> E1[Meus Saldos e Dívidas]
+    E --> E2[Nova Despesa / Ler Recibo]
+    E --> E3[Extrato Geral]
+    
+    C --> F[Aba Membros]
+    F --> F1[Lista de Participantes]
+    F --> F2[Convidar via WhatsApp]
+```
+
+### Justificativa da Organização
+A organização em abas inferiores (Bottom Navigation) no Dashboard da Viagem foi escolhida diretamente para solucionar as dores das nossas personas principais. A **Maria Clara (Organizadora)** precisava de um ambiente onde a gestão do roteiro não se misturasse com a tensão das cobranças financeiras. Para o **Kauan (Participante Prático)**, a hierarquia plana (sem menus "hambúrguer" profundos) permite que ele abra o aplicativo e, com apenas um clique na Aba Financeiro, veja exatamente quanto deve, atendendo à sua necessidade de praticidade e visualização rápida sem ler conversas longas.
+
+---
+
+## 2) Fluxo do Usuário (User Flow)
+
+> **_NOTE:_**: Abaixo estão os 4 fluxogramas das tarefas principais que o usuário percorre, com seus pontos de decisão, atalhos e telas intermediárias.
+
+### Funcionalidade 1: Criar Viagem e Convidar Amigos
+**Objetivo do Usuário:** A organizadora deseja iniciar o planejamento rapidamente e trazer os amigos para a plataforma de forma ágil, utilizando atalhos do sistema operacional para o WhatsApp.
+**Persona:** Maria Clara
+
+```mermaid
+graph TD
+    INICIO([Início: Tela Home]) --> A[Clicar em 'Nova Viagem']
+    A --> B[Preencher Nome, Destino e Datas]
+    B --> C{Campos válidos?}
+    C -- Não --> D[Exibir erro de validação] --> B
+    C -- Sim --> E[Viagem Criada com Sucesso]
+    E --> F[Gerar Link de Convite]
+    F --> G{Escolher Método de Envio}
+    G -- Atalho --> H[Clicar no ícone do WhatsApp]
+    G -- Alternativo --> I[Copiar link manualmente para área de transferência]
+    H --> J[Selecionar o grupo no WhatsApp e enviar]
+    I --> FIM([Fim: Aguardando membros entrarem])
+    J --> FIM
+```
+
+### Funcionalidade 2: Votar em uma Enquete de Roteiro
+**Objetivo do Usuário:** O participante deseja interagir com as opções de passeios de maneira democrática e rápida, sem precisar ler históricos de mensagens.
+**Persona:** Kauan / Samir
+
+```mermaid
+graph TD
+    INICIO([Início: Notificação Push no Celular]) --> A[Tocar na notificação de 'Nova Enquete']
+    A --> B[O aplicativo abre direto na Aba Roteiro]
+    B --> C[Visualizar as opções do passeio/restaurante]
+    C --> D[Selecionar uma das opções]
+    D --> E[Clicar em 'Confirmar Voto']
+    E --> F{Já havia votado antes?}
+    F -- Sim --> G[Sistema atualiza o voto anterior]
+    F -- Não --> H[Sistema registra o novo voto]
+    G --> I[Exibir resultado parcial da votação]
+    H --> I
+    I --> FIM([Fim: Voto computado])
+```
+
+### Funcionalidade 3: Registrar Despesa e Calcular Rateio
+**Objetivo do Usuário:** A organizadora precisa registrar um gasto coletivo (ex: supermercado) e garantir que o aplicativo calcule instantaneamente a dívida de cada participante, evitando planilhas externas.
+**Persona:** Maria Clara
+
+```mermaid
+graph TD
+    INICIO([Início: Aba Financeiro]) --> A[Clicar no botão flutuante '+' Nova Despesa]
+    A --> B{Como preencher os dados?}
+    B -- Manual --> C[Digitar Valor e Descrição]
+    B -- Alternativo / Atalho --> D[Tirar foto do recibo via OCR]
+    D --> E[Sistema preenche valor automaticamente]
+    C --> F{Quem participou da despesa?}
+    E --> F
+    F -- Todos --> G[Selecionar 'Dividir Igualmente']
+    F -- Alguns --> H[Selecionar apenas os membros específicos na lista]
+    G --> I[Clicar em 'Salvar Despesa']
+    H --> I
+    I --> J{Valor é maior que zero?}
+    J -- Não --> K[Exibir erro] --> B
+    J -- Sim --> L[Dívidas atualizadas e notificações enviadas]
+    L --> FIM([Fim: Despesa e Rateio salvos])
+```
+
+### Funcionalidade 4: Pagar Dívida via Pix (Copia e Cola)
+**Objetivo do Usuário:** O participante prático quer visualizar seu saldo devedor e quitar sua parte na viagem com o menor número de cliques possível, usando a integração de área de transferência.
+**Persona:** Kauan
+
+```mermaid
+graph TD
+    INICIO([Início: Aba Financeiro]) --> A[Visualizar card 'Meus Saldos']
+    A --> B[Identificar valor pendente com a Organizadora]
+    B --> C[Clicar no botão 'Pagar via Pix']
+    C --> D[Sistema copia a chave Pix para a área de transferência]
+    D --> E[Exibir Toast: 'Chave copiada!']
+    E --> F[Usuário sai do aplicativo e paga no app do Banco]
+    F --> G[Usuário retorna ao FEI Viagens]
+    G --> H[Clicar no botão 'Já fiz o Pix!']
+    H --> I[Status da dívida muda para 'Aguardando Confirmação']
+    I --> FIM([Fim: Pagamento reportado à Organizadora])
+```
