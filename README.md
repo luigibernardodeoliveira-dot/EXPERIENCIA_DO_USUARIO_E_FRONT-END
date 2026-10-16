@@ -4,9 +4,9 @@ Projeto apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), 
 
 Este projeto é desenvolvido pelos seguintes alunos:
 
-- Luigi Bernardo de Oliveira
-- Gustavo Silva Ferreira 
-- Marcos Vinicius Caetano Silva
+- Luigi Bernardo de Oliveira;
+- Gustavo Silva Ferreira ;
+- Marcos Vinicius Caetano Silva.
 
 ## Conhecendo o problema
 
