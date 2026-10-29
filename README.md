@@ -41,7 +41,7 @@ Sobre o produto ou serviço que seu grupo está desenvolvendo:
 - [Arquitetura de Informação e Fluxo do Usuário](docs/8_arquitetura_fluxo.md)
 
 ### Prototipação
-- [Prototipação em Papel](docs/9_prototipacao_papel.md)
+- [Prototipação de baixa fidelidade(papel)](docs/9_prototipacao_papel.md)
 - [Prototipação de Alta Fidelidade (FIGMA)](docs/10_prototipacao_figma.md)
 
 ### Avaliação
