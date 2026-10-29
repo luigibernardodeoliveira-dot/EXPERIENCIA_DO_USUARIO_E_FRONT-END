@@ -87,16 +87,13 @@ Esboço Desktop 4 - Painel de Viagens e Modal Nova Viagem
 
 <img width="300" height="300" alt="WhatsApp Image 2026-10-22 at 22 22 38 (1)" src="https://github.com/user-attachments/assets/817bb978-dd88-4079-a690-5492887b0109" />
 
-Esboço Desktop 5 - Cronograma e Enquete
+Esboço Desktop 5 -Cronograma e Enquete
 
+<img width="300" height="300" alt="b2087620-1883-4a2e-9b1e-01fd24003c0d" src="https://github.com/user-attachments/assets/ceba3818-7b92-452c-a372-98f425e097ac" />
 
-Esboço Desktop 6 - Chat da Viagem
+Esboço Desktop 6- Tabela Financeira e Nova Despesa
 
-
-Esboço Desktop 7 - Tabela Financeira e Nova Despesa
-
-
-Esboço Desktop 8 - Pagamento Pix
+<img width="300" height="300" alt="74795a38-8b6e-4e65-886e-da1fa7832dcb" src="https://github.com/user-attachments/assets/46f595f0-5d74-4262-af30-6c198e3cb67c" />
 
 
 4. Relate brevemente feedbacks obtidos ao apresentar o protótipo em papel para outras pessoas (colegas, potenciais usuários).
