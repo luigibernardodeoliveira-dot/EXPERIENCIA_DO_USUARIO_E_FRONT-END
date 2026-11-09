@@ -2,7 +2,7 @@
 
 ## 1) Avaliação de IHC através de inspeção HEURÍSTICA 
 
-> **_NOTE:_**: SOMENTE VIOLAÇÕES. As tabelas abaixo apresentam os problemas identificados no protótipo do sistema **FEI Viagens**, separados por cada membro da equipe avaliadora.
+
 
 ### Avaliador 1 (Foco: Cadastro, Login e Painel de Viagens)
 
@@ -21,24 +21,30 @@
 
 | ID | Heurística Violada | Tela do Sistema | Descrição do Problema | Severidade | Sugestão de Correção | Print da Tela |
 | :---: | :--- | :--- | :--- | :---: | :--- | :--- |
-| **V2.1** | **3. Controle e liberdade** | Aba Roteiro (Enquete) | Após clicar em "Confirmar Voto" em um restaurante, o usuário não consegue desfazer ou alterar o voto. | **3** | Incluir um botão "Mudar Voto" abaixo dos resultados da enquete. | `[Print aqui]` |
-| **V2.2** | **4. Consistência e padrões** | Chat da Viagem | O ícone de enviar mensagem é uma "setinha" diferente do padrão universal de "avião de papel". | **1** | Trocar o ícone para o avião de papel padrão de mercado. | `[Print aqui]` |
-| **V2.3** | **6. Reconhecimento** | Aba Roteiro | O cronograma não destaca qual é o dia atual, obrigando o usuário a lembrar que dia é hoje para se localizar. | **2** | Destacar o card do dia de hoje com uma cor diferente ou tag "Hoje". | `[Print aqui]` |
-| **V2.4** | **7. Eficiência de uso** | Chat (Atalhos) | Os atalhos de "Nova Enquete" exigem 3 cliques para serem abertos por dentro do chat. | **2** | Colocar um atalho fixo na barra de digitação. | `[Print aqui]` |
+| **V2.1** | **3. Controle e liberdade** | Aba Roteiro (Enquete) | Após clicar em "Confirmar Voto" em um restaurante, o usuário não consegue desfazer ou alterar o voto. | **3** | Incluir um botão "Mudar Voto" abaixo dos resultados da enquete. | `<img width="1022" height="717" alt="image" src="https://github.com/user-attachments/assets/222c2fcf-697d-4351-888b-e5ac3a17d85e" />
+` |
+| **V2.2** | **4. Consistência e padrões** | Chat da Viagem | O ícone de enviar mensagem é uma "setinha" diferente do padrão universal de "avião de papel". | **1** | Trocar o ícone para o avião de papel padrão de mercado. | `<img width="1020" height="763" alt="image" src="https://github.com/user-attachments/assets/6f25d755-ca94-4488-a3c3-6e00a72c6ca0" />
+` |
+| **V2.3** | **6. Reconhecimento** | Aba Roteiro | O cronograma não destaca qual é o dia atual, obrigando o usuário a lembrar que dia é hoje para se localizar. | **2** | Destacar o card do dia de hoje com uma cor diferente ou tag "Hoje". | `<img width="1019" height="715" alt="image" src="https://github.com/user-attachments/assets/feb4e482-d345-4cd1-bc57-1a56ef272ace" />
+` |
+| **V2.4** | **7. Eficiência de uso** | Chat (Atalhos) | Os atalhos de "Nova Enquete" exigem 3 cliques para serem abertos por dentro do chat. | **2** | Colocar um atalho fixo na barra de digitação. | `<img width="1024" height="179" alt="image" src="https://github.com/user-attachments/assets/e22e1e16-6577-43a5-9c07-7be1459c9a81" />
+` |
 
 ### Avaliador 3 (Foco: Financeiro, Rateio e Pix)
 
 | ID | Heurística Violada | Tela do Sistema | Descrição do Problema | Severidade | Sugestão de Correção | Print da Tela |
 | :---: | :--- | :--- | :--- | :---: | :--- | :--- |
-| **V3.1** | **2. Compatibilidade** | Nova Despesa | O botão de escanear nota fiscal usa o termo técnico "OCR", desconhecido por usuários comuns. | **2** | Alterar para "Ler Recibo" acompanhado de ícone de câmera. | `[Print aqui]` |
-| **V3.2** | **5. Prevenção de erros** | Pagamento Pix | O botão "Já fiz o Pix" fica ativo mesmo antes do usuário clicar em "Copiar Chave", permitindo falsas confirmações. | **3** | Desabilitar o botão de confirmação até que a chave seja copiada. | `[Print aqui]` |
-| **V3.3** | **10. Ajuda e Documentação** | Aba Financeiro | Não fica claro como o aplicativo lida com despesas que não devem ser divididas igualmente (ex: alguém que não bebeu). | **3** | Incluir um ícone de ajuda `(?)` explicando a opção de rateio manual. | `[Print aqui]` |
+| **V3.1** | **2. Compatibilidade** | Nova Despesa | O botão de escanear nota fiscal usa o termo técnico "OCR", desconhecido por usuários comuns. | **2** | Alterar para "Ler Recibo" acompanhado de ícone de câmera. | `<img width="1025" height="711" alt="image" src="https://github.com/user-attachments/assets/85d36752-bd0e-45b5-9963-988d521e4229" />
+` |
+| **V3.2** | **5. Prevenção de erros** | Pagamento Pix | O botão "Já fiz o Pix" fica ativo mesmo antes do usuário clicar em "Copiar Chave", permitindo falsas confirmações. | **3** | Desabilitar o botão de confirmação até que a chave seja copiada. | `<img width="1018" height="744" alt="image" src="https://github.com/user-attachments/assets/e9342b56-9598-4afb-bb8f-d0200f879aa7" />
+` |
+| **V3.3** | **10. Ajuda e Documentação** | Aba Financeiro | Não fica claro como o aplicativo lida com despesas que não devem ser divididas igualmente (ex: alguém que não bebeu). | **3** | Incluir um ícone de ajuda `(?)` explicando a opção de rateio manual. | `<img width="1018" height="715" alt="image" src="https://github.com/user-attachments/assets/9e238de5-b4c3-460e-9d39-f58c3bf27a59" />
+` |
 
 ---
 
 ## 2) INDICAÇÃO DE BOAS PRÁTICAS DE HEURÍSTICA - HEURÍSTICAS NÃO VIOLADAS
 
-> **_NOTE:_**: 1 exemplo do sistema FEI Viagens onde a heurística FOI ATENDIDA (Boas práticas apontadas por cada avaliador).
 
 ### Boas Práticas - Avaliador 1
 1. **Visibilidade do status:** Quando o usuário clica em "Copiar Chave Pix", o botão muda para "Copiado!" por 3 segundos.
