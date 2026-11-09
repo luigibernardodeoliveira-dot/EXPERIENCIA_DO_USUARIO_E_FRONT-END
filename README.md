@@ -42,7 +42,7 @@ Sobre o produto ou serviço que seu grupo está desenvolvendo:
 
 ### Prototipação
 - [Prototipação de baixa fidelidade(papel)](docs/9_prototipacao_papel.md)
-- [Prototipação de Alta Fidelidade (FIGMA)](docs/10_prototipacao_figma.md)
+- [Prototipação de media Fidelidade (FIGMA)](docs/10_prototipacao_figma.md)
 
 ### Avaliação
 - [Planejamento da Avaliação](docs/11_planejamento_avaliacao.md)
