@@ -1,4 +1,4 @@
-# Prototipação de Alta Fidelidade (FIGMA)
+# Prototipação de Media Fidelidade (FIGMA)
 
 ## Protótipo Correspondente à Arquitetura de Informação e Fluxo do Usuário
 
