@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#2563eb">
+        <meta name="description" content="Organize suas viagens, converse com o grupo, vote nos passeios e divida as despesas.">
+        <title>FEI Viagens</title>
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="styles.css?v=2">
+        <script src="script.js?v=2" defer></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+        <header class="app-header" id="app-header">
+            <div class="header-top">
+                <a class="brand" id="brand-link" href="#boas-vindas" aria-label="FEI Viagens">FEI Viagens</a>
+                <button class="profile-button" id="profile-button" type="button" aria-label="Abrir meu perfil">
+                    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                        <circle cx="16" cy="10" r="5" stroke="currentColor" stroke-width="1.8"></circle>
+                        <path d="M6 28v-3a10 10 0 0 1 20 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                    </svg>
+                </button>
+            </div>
+            <h1 id="page-title">Minhas viagens</h1>
+        </header>
+        <nav class="tabs" aria-label="Seções da viagem" hidden>
+            <a class="tab" data-tab="chat" href="#chat">Chat</a>
+            <a class="tab" data-tab="roteiro" href="#roteiro">Roteiro</a>
+            <a class="tab" data-tab="financeiro" href="#financeiro">Financeiro</a>
+        </nav>
+        <main id="conteudo" tabindex="-1"></main>
+        <div id="toast" class="toast" role="status" hidden></div>
+        <dialog class="profile-dialog" id="profile-dialog" aria-labelledby="profile-title">
+            <div class="dialog-header">
+                <h2 id="profile-title">Meu perfil</h2>
+                <button class="icon-button" id="close-profile" type="button" aria-label="Fechar perfil">×</button>
+            </div>
+            <form id="profile-form">
+                <div class="field">
+                    <label for="profile-name">Seu nome</label>
+                    <input id="profile-name" name="nome" maxlength="40" required autocomplete="given-name">
+                </div>
+                <button class="button button-primary" type="submit">Salvar</button>
+                <a class="button button-secondary" href="#viagens" id="back-to-trips">Minhas viagens</a>
+                <button class="button button-text" id="logout-button" type="button">Sair da conta</button>
+            </form>
+        </dialog>
+    </body>
+</html>
