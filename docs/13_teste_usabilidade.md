@@ -58,7 +58,6 @@ Ao término das 5 tarefas, coletamos a percepção de satisfação do participan
 | **4. Lançar Despesa** | Sucesso Parcial | 2 | Compreensão (Não entendeu a sigla OCR) e Ação (Clicou em salvar antes de dividir) | 35 segundos | Confusão Moderada |
 | **5. Pagamento Pix** | Sucesso Total | 0 | Nenhum | 10 segundos | Muito Satisfeito |
 
-* **Links dos vídeos (Usuário 1):** `[Cole o link do Google Drive/YouTube da Gravação 1 aqui]`
 * **Respostas do Formulário do Usuário 1:** 22 anos, estudante universitário, viaja de 2 a 3 vezes por ano com amigos. Utiliza grupos no WhatsApp e planilhas no Excel para controle financeiro. Comentou que achou o fluxo muito rápido, mas ficou em dúvida sobre o significado do botão "OCR" na tela de nova despesa.
 
 ---
@@ -73,7 +72,6 @@ Ao término das 5 tarefas, coletamos a percepção de satisfação do participan
 | **4. Lançar Despesa** | Sucesso Parcial | 1 | Ação (Esqueceu de marcar a caixa "Dividir Igualmente") | 30 segundos | Confusão Moderada |
 | **5. Pagamento Pix** | Sucesso Total | 0 | Nenhum | 12 segundos | Muito Satisfeito |
 
-* **Links dos vídeos (Usuário 2):** `[Cole o link do Google Drive/YouTube da Gravação 2 aqui]`
 * **Respostas do Formulário do Usuário 2:** 25 anos, recém-formado, viaja 1 vez por ano no réveillon. Já utilizou o aplicativo Splitwise, mas acha a interface poluída. Comentou que o design do FEI Viagens é direto ao ponto, porém sentiu falta de um destaque maior na opção de dividir a despesa igualmente.
 
 ---
@@ -88,7 +86,6 @@ Ao término das 5 tarefas, coletamos a percepção de satisfação do participan
 | **4. Lançar Despesa** | Sucesso Total | 0 | Nenhum | 20 segundos | Satisfeito |
 | **5. Pagamento Pix** | Sucesso Parcial | 1 | Ação (Copiou a chave Pix, mas ia fechando a tela sem clicar em "Já fiz o Pix") | 18 segundos | Satisfeito |
 
-* **Links dos vídeos (Usuário 3):** `[Cole o link do Google Drive/YouTube da Gravação 3 aqui]`
 * **Respostas do Formulário do Usuário 3:** 20 anos, viaja frequentemente em excursões da atlética da faculdade. Faz todo o controle pelo bloco de notas do celular. Elogiou a facilidade de copiar a chave Pix direto na tela de saldos, mas relatou que quase esqueceu de clicar no botão de confirmar o pagamento dentro do próprio aplicativo.
 
 ---
